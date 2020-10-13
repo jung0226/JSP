@@ -2,6 +2,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.Calendar, java.util.Scanner" %>
 <%@ page import="java.io.InputStream" %>
+<!-- 소스보기 실행시 jsp부분은 빈줄로 나옴. 빈줄 제거하는 방법 -->
+<%@ page trimDirectiveWhitespaces="true" %>
 <%!
 	//선언부 : 메소드나 변수를 선언하는 곳이다.
 	//웹의 접근제한자는 무조건 public
@@ -33,7 +35,14 @@
 </script>
 </head>
 <body>
-<h1>JSP HOME</h1>
+<h1>JSP HOME : <%=session.getId() %></h1>
+<%
+	String logStatus = (String)session.getAttribute("logStatus");
+	if(logStatus==null || logStatus.equals("")){ %>
+	<a href="<%=request.getContextPath() %>/response/login.html">로그인</a>
+	<%}else if(logStatus!=null && logStatus.equals("Y")){ %>
+	<a href="<%=request.getContextPath() %>/response/logout.jsp">로그아웃</a>
+	<%} %>
 <!-- 스크립트릿 -->
 <%
 	int a=200;
