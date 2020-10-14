@@ -41,8 +41,12 @@
 	if(logStatus==null || logStatus.equals("")){ %>
 	<a href="<%=request.getContextPath() %>/response/login.html">로그인</a>
 	<%}else if(logStatus!=null && logStatus.equals("Y")){ %>
-	<a href="<%=request.getContextPath() %>/response/logout.jsp">로그아웃</a>
+	<%=session.getAttribute("username") %><a href="<%=request.getContextPath() %>/response/logout.jsp">로그아웃</a>
 	<%} %>
+<hr/>
+<ul>
+	<li><a href="<%=request.getContextPath()%>/freeboard/boardList.jsp">게시판</a></li>
+</ul>
 <!-- 스크립트릿 -->
 <%
 	int a=200;
