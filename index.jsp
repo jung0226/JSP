@@ -40,12 +40,25 @@
 	String logStatus = (String)session.getAttribute("logStatus");
 	if(logStatus==null || logStatus.equals("")){ %>
 	<a href="<%=request.getContextPath() %>/response/login.html">로그인</a>
+	<a href="<%=request.getContextPath() %>/register/regForm.jsp">회원가입</a>
 	<%}else if(logStatus!=null && logStatus.equals("Y")){ %>
 	<%=session.getAttribute("username") %><a href="<%=request.getContextPath() %>/response/logout.jsp">로그아웃</a>
 	<%} %>
 <hr/>
 <ul>
 	<li><a href="<%=request.getContextPath()%>/freeboard/boardList.jsp">게시판</a></li>
+</ul>
+<hr/>
+<!-- --------------------------------------------
+	JSTL(JSP Standard Tag Library)
+	https://tomcat.apache.org/taglibs/standard/에서
+	jakarta-taglibs-standard-1.1.2.zip다운로드후
+	jstl.jar, standard.jar을 WEB-INF/lib에 복사한다.
+--------------------------------------------- -->
+<ul>
+	<li><a href="/webJSP/jstl/jstl01_setTag.jsp">setTag</a>: 변수를 선언하고 값을 보관 또는 삭제한다.</li>
+	<li><a href="/webJSP/jstl/jstl02_ifTag.jsp?username=홍길동&age=30&userid=goguma">if Tag</a>: 조건문</li>
+	<li><a href="/webJSP/jstl/jstl03_forEachTag.jsp">forEach Tag</a>: 반복문</li>
 </ul>
 <!-- 스크립트릿 -->
 <%

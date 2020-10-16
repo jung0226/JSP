@@ -1,7 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@page import="com.bitcamp.freeboard.FreeboardVO"%>
 <%@page import="java.util.List"%>
 <%@page import="com.bitcamp.freeboard.FreeboardDAO"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
