@@ -78,6 +78,9 @@
 		<h1>게시판</h1>
 		<div>총 레코드 수 : <%=totalRecord %>개</div>
 		<div>pages : <%=nowPage %>/<%=totalPage %></div>
+		<!-- 더 많이 쓰는 표기법 
+		<div>pages: ${nowPage}/ ${totalPage }</div>
+		-->
 		<ul id="lst">
 			<li>번호</li>
 			<li>제목</li>

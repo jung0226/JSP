@@ -59,6 +59,10 @@
 	<li><a href="/webJSP/jstl/jstl01_setTag.jsp">setTag</a>: 변수를 선언하고 값을 보관 또는 삭제한다.</li>
 	<li><a href="/webJSP/jstl/jstl02_ifTag.jsp?username=홍길동&age=30&userid=goguma">if Tag</a>: 조건문</li>
 	<li><a href="/webJSP/jstl/jstl03_forEachTag.jsp">forEach Tag</a>: 반복문</li>
+	<li><a href="/webJSP/jstl/jstl04_forTokensTag.jsp">forTokens Tag</a>: 문자열 특정 기호로 자르기</li>
+	<li><a href="/webJSP/jstl/jstl05_urlTag.jsp">url Tag</a>: url 주소와 파라미터의 정보를 가진다.</li>
+	<li><a href="/webJSP/jstl/jstl06_chooseTag.jsp?username=홍길동&age=25">choose Tag</a>: 다중 if문, switch문</li>
+	<li><a href="/webJSP/jstl/jstl07_redirectTag.jsp">redirect Tag</a>:페이지 이동</li>
 </ul>
 <!-- 스크립트릿 -->
 <%
